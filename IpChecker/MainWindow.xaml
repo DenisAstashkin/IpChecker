@@ -1,0 +1,47 @@
+﻿<Window x:Class="IpChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IpChecker"
+        mc:Ignorable="d"
+        Title="IPChecker" 
+        MinHeight="550" 
+        MinWidth="350"
+        Height="550"
+        Width="350"
+        Background="DeepSkyBlue"
+        Icon="E:\C#\IpChecker\IpChecker\Icon\IpChecker.ico">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Styles.xaml"/>
+    </Window.Resources>    
+    
+    <Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="0.1*"/>
+        <RowDefinition/>
+    </Grid.RowDefinitions>
+        <Label Content="IP:" Grid.Row="0" Grid.Column="0" Style="{StaticResource MainIP}"/>
+        <TextBox x:Name="IP" Grid.Row="0" Grid.Column="0" Style="{StaticResource SetIP}"/>
+        <Button Grid.Row="0" Grid.Column="1" Click="Button_Click" Content="Найти IP" Style="{StaticResource ButtonIP}"/>
+        <StackPanel x:Name="NameInfo" Grid.Row="1" Grid.Column="0">
+            <Label Content="Query: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="Status: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="Country: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="CountryCode: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="Region: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="RegionName: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="City: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="Zip: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="Lat: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="Lon: " Style="{StaticResource OtherLabel}"/>
+            <Label Content="Isp: " Style="{StaticResource OtherLabel}"/>            
+        </StackPanel>
+        <StackPanel x:Name="Info" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</Window>

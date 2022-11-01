@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IpChecker", "IpChecker\IpChecker.csproj", "{A2ACB311-8AB5-4109-9BEA-9CD60ECE1800}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2ACB311-8AB5-4109-9BEA-9CD60ECE1800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2ACB311-8AB5-4109-9BEA-9CD60ECE1800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2ACB311-8AB5-4109-9BEA-9CD60ECE1800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2ACB311-8AB5-4109-9BEA-9CD60ECE1800}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFCF471C-5ABF-4962-B6C1-FC04DC5F5127}
+	EndGlobalSection
+EndGlobal
